@@ -25,9 +25,9 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gray-800 animate-fade-in">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center bg-zinc-900">
+      <section className="pt-20 pb-16 animate-fade-in bg-stone-800">
+        <div className="container mx-auto px-4 bg-stone-800">
+          <div className="grid md:grid-cols-2 gap-12 items-center bg-stone-800">
             <div className="space-y-6">
               <h1 className="text-6xl font-bold text-white leading-tight">
                 Профессиональный <span className="text-red-600">ремонт</span> и обслуживание кофемашин в Сочи
@@ -55,7 +55,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16">
+      <section id="services" className="py-16 bg-stone-900">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши услуги</h2>
