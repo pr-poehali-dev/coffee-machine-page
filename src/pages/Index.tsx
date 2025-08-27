@@ -218,7 +218,7 @@ const Index = () => {
                 <div className="p-6 rounded-xl bg-[#ffffff]">
                   <Icon name="Mail" size={32} className="text-red-600 mb-4" />
                   <h3 className="font-semibold mb-2 text-black">Email</h3>
-                  <p className="text-black">s4777752@ya.ru</p>
+                  <p className="text-black">rbt2913767@yandex.ru</p>
                 </div>
                 <div className="p-6 rounded-xl bg-[#ffffff]">
                   <Icon name="MapPin" size={32} className="text-red-600 mb-4" />
