@@ -195,26 +195,26 @@ const Index = () => {
             <div className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="bg-primary/5 p-6 rounded-xl">
-                  <Icon name="Phone" size={32} className="text-primary mb-4" />
-                  <h3 className="font-semibold mb-2">Телефон</h3>
-                  <p className="text-gray-600">+7 (495) 123-45-67</p>
-                  <p className="text-gray-600">+7 (800) 555-35-35</p>
+                  <Icon name="Phone" size={32} className="text-red-600 mb-4" />
+                  <h3 className="font-semibold mb-2 text-white">Телефон</h3>
+                  <p className="text-white">+7 (988) 182 59 97</p>
+                  <p className="text-white">+7 (938) 441 37 67</p>
                 </div>
                 <div className="bg-secondary/5 p-6 rounded-xl">
-                  <Icon name="Mail" size={32} className="text-secondary mb-4" />
-                  <h3 className="font-semibold mb-2">Email</h3>
-                  <p className="text-gray-600">info@megavolt.ru</p>
-                  <p className="text-gray-600">service@megavolt.ru</p>
+                  <Icon name="Mail" size={32} className="text-red-600 mb-4" />
+                  <h3 className="font-semibold mb-2 text-white">Email</h3>
+                  <p className="text-white">s4777752@ya.ru</p>
                 </div>
                 <div className="bg-primary/5 p-6 rounded-xl">
-                  <Icon name="MapPin" size={32} className="text-primary mb-4" />
-                  <h3 className="font-semibold mb-2">Адрес</h3>
-                  <p className="text-gray-600">г. Москва, ул. Примерная, д. 123</p>
+                  <Icon name="MapPin" size={32} className="text-red-600 mb-4" />
+                  <h3 className="font-semibold mb-2 text-white">Адрес</h3>
+                  <p className="text-white">г.Сочи, ул. Красноармейская, 9Б</p>
                 </div>
                 <div className="bg-secondary/5 p-6 rounded-xl">
-                  <Icon name="Clock" size={32} className="text-secondary mb-4" />
-                  <h3 className="font-semibold mb-2">График работы</h3>
-                  <p className="text-gray-600">Пн-Вс: 8:00 - 22:00</p>
+                  <Icon name="Clock" size={32} className="text-red-600 mb-4" />
+                  <h3 className="font-semibold mb-2 text-white">График работы</h3>
+                  <p className="text-white">Пн-Пт: 09:00 - 18:00</p>
+                  <p className="text-white">Сб-Вс: 10:00 - 18:00</p>
                 </div>
               </div>
             </div>
