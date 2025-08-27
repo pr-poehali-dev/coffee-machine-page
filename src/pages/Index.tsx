@@ -194,23 +194,23 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
-                <div className="bg-primary/5 p-6 rounded-xl">
+                <div className="p-6 rounded-xl bg-[#ffffff]">
                   <Icon name="Phone" size={32} className="text-red-600 mb-4" />
                   <h3 className="font-semibold mb-2 text-white">Телефон</h3>
                   <p className="text-white">+7 (988) 182 59 97</p>
                   <p className="text-white">+7 (938) 441 37 67</p>
                 </div>
-                <div className="bg-secondary/5 p-6 rounded-xl">
+                <div className="p-6 rounded-xl bg-[#ffffff]">
                   <Icon name="Mail" size={32} className="text-red-600 mb-4" />
                   <h3 className="font-semibold mb-2 text-white">Email</h3>
                   <p className="text-white">s4777752@ya.ru</p>
                 </div>
-                <div className="bg-primary/5 p-6 rounded-xl">
+                <div className="p-6 rounded-xl bg-[#ffffff]">
                   <Icon name="MapPin" size={32} className="text-red-600 mb-4" />
                   <h3 className="font-semibold mb-2 text-white">Адрес</h3>
                   <p className="text-white">г.Сочи, ул. Красноармейская, 9Б</p>
                 </div>
-                <div className="bg-secondary/5 p-6 rounded-xl">
+                <div className="p-6 rounded-xl bg-[#ffffff]">
                   <Icon name="Clock" size={32} className="text-red-600 mb-4" />
                   <h3 className="font-semibold mb-2 text-white">График работы</h3>
                   <p className="text-white">Пн-Пт: 09:00 - 18:00</p>
