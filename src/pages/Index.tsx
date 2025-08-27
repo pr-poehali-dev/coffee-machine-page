@@ -29,7 +29,7 @@ const Index = () => {
               className="bg-primary hover:bg-primary/90"
               onClick={() => {
                 const phoneNumbers = ['+7 (988) 182 59 97', '+7 (938) 441 37 67'];
-                const choice = window.confirm(`Выберите номер для звонка:\n\nОК - ${phoneNumbers[0]}\nОтмена - ${phoneNumbers[1]}`);
+                const choice = window.confirm(`Выберите номер для звонка:\n\nНомер 1 - ${phoneNumbers[0]}\nНомер 2 - ${phoneNumbers[1]}`);
                 const selectedNumber = choice ? phoneNumbers[0] : phoneNumbers[1];
                 window.location.href = `tel:${selectedNumber.replace(/[^\d+]/g, '')}`;
               }}
