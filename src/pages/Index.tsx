@@ -35,23 +35,23 @@ const Index = () => {
     <div className="min-h-screen relative">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center bg-stone-200">
-          <div className="text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
+        <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center bg-stone-200 gap-4">
+          <div className="text-4xl md:text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </div>
-          <div className="flex gap-2">
+          <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
             <Button 
-              className="bg-green-600 hover:bg-green-700"
+              className="bg-green-600 hover:bg-green-700 text-sm md:text-base"
               onClick={() => window.open('https://wa.me/79384413767', '_blank')}
             >
               <Icon name="MessageCircle" size={16} />
               WhatsApp
             </Button>
             <Button 
-              className="bg-primary hover:bg-primary/90"
+              className="bg-primary hover:bg-primary/90 text-sm md:text-base"
               onClick={() => {
                 const phoneNumbers = ['+7 (988) 182 59 97', '+7 (938) 441 37 67'];
                 const choice = window.confirm(`Выберите номер для звонка:\n\nНомер 1 - ${phoneNumbers[0]}\nНомер 2 - ${phoneNumbers[1]}`);
@@ -69,27 +69,26 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-20 pb-16 animate-fade-in bg-stone-800">
         <div className="container mx-auto px-4 bg-stone-800">
-          <div className="grid md:grid-cols-2 gap-12 items-center bg-stone-800">
-            <div className="space-y-6">
-              <h1 className="text-6xl font-bold text-white leading-tight">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-stone-800">
+            <div className="space-y-4 md:space-y-6 order-2 md:order-1">
+              <h1 className="text-3xl md:text-6xl font-bold text-white leading-tight">
                 Профессиональный <span className="text-red-600">ремонт</span> и <span className="text-red-600">обслуживание</span> кофемашин в Сочи
               </h1>
-              <div className="space-y-4 text-xl text-gray-300">
+              <div className="space-y-2 md:space-y-4 text-base md:text-xl text-gray-300">
                 <p>Профессиональный ремонт в Сочи.</p>
                 <p>Качественный и быстрый ремонт всех брендов.</p>
                 <p>Восстановим работу вашей кофемашины быстро и по доступной цене.</p>
               </div>
-
             </div>
-            <div className="relative">
+            <div className="relative order-1 md:order-2">
               <img 
                 src="https://cdn.poehali.dev/files/24bd0143-c275-42b9-8456-f51fd7e9b3fd.jpg" 
                 alt="Ремонт кофемашин" 
-                className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
+                className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300 w-full"
               />
-              <div className="absolute -bottom-6 -left-6 bg-primary text-white p-4 rounded-xl shadow-lg animate-scale-in">
-                <div className="text-2xl font-bold">12+</div>
-                <div className="text-sm">лет опыта</div>
+              <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-primary text-white p-3 md:p-4 rounded-xl shadow-lg animate-scale-in">
+                <div className="text-xl md:text-2xl font-bold">12+</div>
+                <div className="text-xs md:text-sm">лет опыта</div>
               </div>
             </div>
           </div>
