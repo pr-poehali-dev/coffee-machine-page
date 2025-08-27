@@ -11,7 +11,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center bg-stone-200">
-          <div className="text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
+          <div className="text-8xl font-bold text-red-600">МЕГАВОЛЬТ</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
@@ -252,7 +252,7 @@ const Index = () => {
             <div>
               <div className="text-2xl font-bold text-primary mb-4">МЕГАВОЛЬТ</div>
               <p className="text-gray-400 mb-4">
-                Профессиональный сервисный центр по ремонту кофемашин в Москве и области
+                Профессиональный сервисный центр по ремонту кофемашин в г.Сочи
               </p>
               <div className="flex space-x-4">
                 <Button variant="ghost" size="sm" className="text-gray-400 hover:text-primary">
@@ -269,16 +269,16 @@ const Index = () => {
                 <li><a href="#" className="hover:text-primary transition-colors">Ремонт кофемашин</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Чистка от накипи</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Замена деталей</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Выезд мастера</a></li>
+
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Контакты</h3>
               <ul className="space-y-2 text-gray-400">
-                <li>+7 (495) 123-45-67</li>
-                <li>info@megavolt.ru</li>
-                <li>г. Москва, ул. Примерная, 123</li>
-                <li>Пн-Вс: 8:00 - 22:00</li>
+                <li>+7 (988) 182 59 97/ +7 (938) 441 37 67</li>
+                <li>rbt2913767@yandex.ru</li>
+                <li>г.Сочи, ул. Красноармейская, 9Б</li>
+                <li>Пн-Пт: 09:00 - 18:00, Сб-Вс: 10:00 - 18:00</li>
               </ul>
             </div>
             <div>
@@ -286,7 +286,7 @@ const Index = () => {
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-primary transition-colors">О компании</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Гарантии</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Отзывы</a></li>
+
                 <li><a href="#" className="hover:text-primary transition-colors">Контакты</a></li>
               </ul>
             </div>
