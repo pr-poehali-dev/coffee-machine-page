@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,8 +6,33 @@ import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
+  const [showBrands, setShowBrands] = useState(false);
+
+  const brandsData = {
+    "Бытовые кофемашины": {
+      "Jura": ["Jura ENA 8", "Jura E8", "Jura Z8", "Jura S8", "Jura D6", "Jura A1", "Jura WE8", "Jura Giga X3 (домашний вариант)"],
+      "DeLonghi": ["DeLonghi Magnifica S ECAM 22.110.B", "DeLonghi Dinamica ECAM 350.55.B", "DeLonghi PrimaDonna Elite ECAM 550.75.MS", "DeLonghi Dedica EC680.M", "DeLonghi ECAM 22.110.B", "DeLonghi ECAM 23.420.SB"],
+      "Saeco (Philips)": ["Saeco Xelsis SM7684/00", "Saeco PicoBaristo HD8927/01", "Saeco Incanto HD8917/01", "Saeco GranBaristo Avanti / HD8964/47 / HD8967/47"],
+      "Bosch": ["Bosch VeroBar TIS30129RW", "Bosch Tassimo (различные модели)"],
+      "Krups": ["Krups EA89xx (например, EA89)", "Krups Evidence EA8918"],
+      "Melitta": ["Melitta Caffeo Solo & Milk E950-103 / E950-101", "Melitta Caffeo Barista TS"],
+      "Philips / Saeco": ["Philips EP2220/10 (Luna)", "Philips EP3246/70 (Luna)", "Philips 2200 Series EP2220/10"],
+      "Others": ["Gaggia Brera / Accademia / Naviglio / Anima / Velasca"]
+    },
+    "Профессиональные кофемашины": {
+      "La Marzocco": ["Linea Mini", "Strada AV (Automatic Volumetric)", "Linea PB (Professional Barista)", "GS3 MP (for high-end coffee shops)"],
+      "Nuova Simonelli": ["Aurelia II T (Турбо)", "Appia II Compact", "Musica", "Oscar II", "Aurelia Wave"],
+      "Victoria Arduino": ["Venus (для профессиональных кофеен)", "Eagle One", "White Eagle IV", "Red Eagle IV"],
+      "Faema": ["E61 Classic / E61 X30 / E61 Legend"],
+      "Sanremo": ["Opera Mini / Cafe Racer / Verona / Tradizione"],
+      "Rancilio": ["Rancilio Classe 11 / Classe 9 / Classe 7"],
+      "La Cimbali": ["M39 / M26 / M32 / M34"],
+      "Other brands": ["ECM Technika IV Profi", "La Spaziale S1 Vivaldi II", "Astoria Plus 4 You II"]
+    }
+  };
+
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center bg-stone-200">
@@ -287,6 +312,57 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      {/* Brands Button */}
+      <Button 
+        onClick={() => setShowBrands(!showBrands)}
+        className="fixed bottom-4 left-4 z-50 bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg shadow-lg"
+      >
+        <Icon name="Coffee" size={20} />
+        Бренды кофемашин
+      </Button>
+
+      {/* Brands Modal */}
+      {showBrands && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold text-gray-900">Бренды кофемашин</h2>
+                <Button 
+                  onClick={() => setShowBrands(false)}
+                  variant="ghost"
+                  size="sm"
+                >
+                  <Icon name="X" size={20} />
+                </Button>
+              </div>
+              
+              <div className="space-y-6">
+                {Object.entries(brandsData).map(([category, brands]) => (
+                  <div key={category}>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-4 border-b pb-2">
+                      {category}
+                    </h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      {Object.entries(brands).map(([brand, models]) => (
+                        <div key={brand} className="bg-gray-50 p-4 rounded-lg">
+                          <h4 className="font-semibold text-gray-700 mb-2">{brand}:</h4>
+                          <ul className="text-sm text-gray-600 space-y-1">
+                            {models.map((model, index) => (
+                              <li key={index}>{model}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
