@@ -219,38 +219,13 @@ const Index = () => {
               </div>
             </div>
             
-            <Card className="p-8">
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Имя</label>
-                    <Input placeholder="Ваше имя" />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Телефон</label>
-                    <Input placeholder="+7 (___) ___-__-__" />
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Модель кофемашины</label>
-                  <Input placeholder="Например: DeLonghi ECAM 350.15.B" />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Описание проблемы</label>
-                  <Textarea 
-                    placeholder="Опишите, что происходит с кофемашиной..."
-                    className="min-h-[120px]"
-                  />
-                </div>
-                <Button size="lg" className="w-full bg-primary hover:bg-primary/90">
-                  <Icon name="Send" size={20} />
-                  Отправить заявку
-                </Button>
-                <p className="text-sm text-gray-500 text-center">
-                  Нажимая кнопку, вы соглашаетесь с обработкой персональных данных
-                </p>
-              </form>
-            </Card>
+            <div className="rounded-xl overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/files/b904fcc2-ee85-49b6-b5b2-a433d1f3bec6.jpg" 
+                alt="Мастер ремонтирует кофемашину в мастерской"
+                className="w-full h-auto object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
