@@ -123,7 +123,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Почему выбирают нас</h2>
+              <h2 className="text-4xl font-bold text-white mb-6">Почему выбирают нас</h2>
               <div className="space-y-6">
                 {[
                   {
@@ -152,8 +152,8 @@ const Index = () => {
                       <Icon name={feature.icon as any} size={24} className="text-white" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                      <p className="text-gray-600">{feature.description}</p>
+                      <h3 className="text-xl font-semibold mb-2 text-white">{feature.title}</h3>
+                      <p className="text-gray-300">{feature.description}</p>
                     </div>
                   </div>
                 ))}
@@ -161,8 +161,8 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="/img/90365781-85f4-4c41-b350-4c61ca4bac6d.jpg" 
-                alt="Инструменты для ремонта" 
+                src="https://cdn.poehali.dev/files/3db6cf69-0718-4758-a48a-e443015147ea.jpg" 
+                alt="Кофемашина BORK" 
                 className="rounded-2xl shadow-2xl"
               />
               <div className="absolute -top-6 -right-6 bg-secondary text-white p-6 rounded-xl shadow-lg">
