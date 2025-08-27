@@ -248,7 +248,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="text-2xl font-bold text-primary mb-4">МЕГАВОЛЬТ</div>
               <p className="text-gray-400 mb-4">
@@ -265,11 +265,10 @@ const Index = () => {
             </div>
             <div>
               <h3 className="font-semibold mb-4">Услуги</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-primary transition-colors">Ремонт кофемашин</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Чистка от накипи</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Замена деталей</a></li>
-
+              <ul className="space-y-2 text-gray-500">
+                <li>Ремонт кофемашин</li>
+                <li>Чистка от накипи</li>
+                <li>Замена деталей</li>
               </ul>
             </div>
             <div>
@@ -281,15 +280,7 @@ const Index = () => {
                 <li>Пн-Пт: 09:00 - 18:00, Сб-Вс: 10:00 - 18:00</li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-semibold mb-4">Информация</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-primary transition-colors">О компании</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Гарантии</a></li>
 
-                <li><a href="#" className="hover:text-primary transition-colors">Контакты</a></li>
-              </ul>
-            </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
             <p>ИП Паклин С.В. ул.Виноградная, д 22/1, ИНН 594200005879</p>
