@@ -186,9 +186,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Свяжитесь с нами</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Оставьте заявку и наш мастер свяжется с вами в течение 15 минут
-            </p>
+
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12">
