@@ -25,16 +25,18 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 bg-gradient-to-br from-primary/10 to-secondary/10 animate-fade-in">
+      <section className="pt-20 pb-16 bg-gray-800 animate-fade-in">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-                Профессиональный <span className="text-primary">ремонт</span> кофемашин
+              <h1 className="text-5xl font-bold text-white leading-tight">
+                Профессиональный <span className="text-red-600">ремонт</span> и обслуживание кофемашин в Сочи
               </h1>
-              <p className="text-xl text-gray-600">
-                Быстрое и качественное обслуживание кофемашин любой сложности. Выезд мастера в день обращения.
-              </p>
+              <div className="space-y-4 text-xl text-gray-300">
+                <p>Профессиональный ремонт в Сочи.</p>
+                <p>Качественный и быстрый ремонт всех брендов.</p>
+                <p>Восстановим работу вашей кофемашины быстро и по доступной цене.</p>
+              </div>
 
             </div>
             <div className="relative">
