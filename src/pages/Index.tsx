@@ -274,7 +274,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 justify-items-center text-center">
             <div>
-              <div className="text-2xl font-bold text-primary mb-4">МЕГАВОЛЬТ</div>
+              <div className="text-4xl font-bold text-primary mb-4">МЕГАВОЛЬТ</div>
               <p className="text-gray-400 mb-4">
                 Профессиональный сервисный центр по ремонту кофемашин в г.Сочи
               </p>
