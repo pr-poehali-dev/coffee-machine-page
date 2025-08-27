@@ -17,10 +17,19 @@ const Index = () => {
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
             <a href="#contact" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">
-            <Icon name="Phone" size={16} />
-            Заказать звонок
-          </Button>
+          <div className="flex gap-2">
+            <Button 
+              className="bg-green-600 hover:bg-green-700"
+              onClick={() => window.open('https://wa.me/79384413767', '_blank')}
+            >
+              <Icon name="MessageCircle" size={16} />
+              WhatsApp
+            </Button>
+            <Button className="bg-primary hover:bg-primary/90">
+              <Icon name="Phone" size={16} />
+              Заказать звонок
+            </Button>
+          </div>
         </div>
       </nav>
 
