@@ -292,7 +292,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 МЕГАВОЛЬТ. Все права защищены.</p>
+            <p>ИП Паклин С.В. ул.Виноградная, д 22/1, ИНН 594200005879</p>
           </div>
         </div>
       </footer>
