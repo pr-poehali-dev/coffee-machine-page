@@ -11,7 +11,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-3xl font-bold text-red-600">МЕГАВОЛЬТ</div>
+          <div className="text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
@@ -30,7 +30,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center bg-stone-800">
             <div className="space-y-6">
               <h1 className="text-6xl font-bold text-white leading-tight">
-                Профессиональный <span className="text-red-600">ремонт</span> и обслуживание кофемашин в Сочи
+                Профессиональный <span className="text-red-600">ремонт</span> и <span className="text-red-600">обслуживание</span> кофемашин в Сочи
               </h1>
               <div className="space-y-4 text-xl text-gray-300">
                 <p>Профессиональный ремонт в Сочи.</p>
