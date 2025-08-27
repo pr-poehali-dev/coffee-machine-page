@@ -127,24 +127,19 @@ const Index = () => {
               <div className="space-y-6">
                 {[
                   {
-                    icon: "Award",
-                    title: "Опытные мастера",
-                    description: "Сертифицированные специалисты с опытом работы от 5 лет"
+                    icon: "Search",
+                    title: "Быстрая диагностика",
+                    description: "Диагностика в течение 1-2 дней."
                   },
                   {
                     icon: "Zap",
                     title: "Быстрый сервис",
-                    description: "Выезд мастера в день обращения, ремонт за 1-2 дня"
+                    description: "Ремонт в течение 1-3 дней."
                   },
                   {
                     icon: "Star",
                     title: "Гарантия качества",
-                    description: "Гарантия на все виды работ до 12 месяцев"
-                  },
-                  {
-                    icon: "DollarSign",
-                    title: "Честные цены",
-                    description: "Прозрачное ценообразование без скрытых доплат"
+                    description: "Гарантия 14 дней на проверку оборудования, если что-то не так, исправим бесплатно."
                   }
                 ].map((feature, index) => (
                   <div key={index} className="flex gap-4">
@@ -165,10 +160,7 @@ const Index = () => {
                 alt="Кофемашина BORK" 
                 className="rounded-2xl shadow-2xl"
               />
-              <div className="absolute -top-6 -right-6 bg-secondary text-white p-6 rounded-xl shadow-lg">
-                <div className="text-3xl font-bold">24/7</div>
-                <div className="text-sm">поддержка</div>
-              </div>
+
             </div>
           </div>
         </div>
