@@ -39,7 +39,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="/img/a9033529-be6f-406e-a337-60fdbcdcab92.jpg" 
+                src="https://cdn.poehali.dev/files/24bd0143-c275-42b9-8456-f51fd7e9b3fd.jpg" 
                 alt="Ремонт кофемашин" 
                 className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300"
               />
