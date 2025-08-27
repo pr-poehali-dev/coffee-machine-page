@@ -10,7 +10,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-4 flex justify-between items-center bg-stone-200">
           <div className="text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
