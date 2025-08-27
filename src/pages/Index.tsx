@@ -53,6 +53,7 @@ const Index = () => {
             <Button 
               className="bg-primary hover:bg-primary/90 text-sm md:text-base"
               onClick={() => {
+                (window as any).ym?.(58739473, 'reachGoal', 'make-call');
                 window.location.href = 'tel:+79384413767';
               }}
             >
