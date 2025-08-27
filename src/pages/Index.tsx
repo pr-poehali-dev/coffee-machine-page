@@ -55,7 +55,7 @@ const Index = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 bg-stone-900">
+      <section id="services" className="py-16 bg-stone-200">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши услуги</h2>
