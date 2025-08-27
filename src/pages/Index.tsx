@@ -80,11 +80,11 @@ const Index = () => {
                 <p>Восстановим работу вашей кофемашины быстро и по доступной цене.</p>
               </div>
             </div>
-            <div className="relative order-1 md:order-2">
+            <div className="relative order-1 md:order-2 flex justify-center">
               <img 
                 src="https://cdn.poehali.dev/files/24bd0143-c275-42b9-8456-f51fd7e9b3fd.jpg" 
                 alt="Ремонт кофемашин" 
-                className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300 w-full"
+                className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-300 w-3/4 md:w-full"
               />
               <div className="absolute -bottom-4 -left-4 md:-bottom-6 md:-left-6 bg-primary text-white p-3 md:p-4 rounded-xl shadow-lg animate-scale-in">
                 <div className="text-xl md:text-2xl font-bold">12+</div>
