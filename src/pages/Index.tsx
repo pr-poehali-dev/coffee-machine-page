@@ -110,11 +110,7 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <div className="flex justify-end items-center">
-                    <Button variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-white">
-                      <Icon name="ArrowRight" size={16} />
-                    </Button>
-                  </div>
+
                 </CardContent>
               </Card>
             ))}
