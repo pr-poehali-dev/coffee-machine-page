@@ -45,7 +45,10 @@ const Index = () => {
           <div className="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
             <Button 
               className="bg-green-600 hover:bg-green-700 text-sm md:text-base"
-              onClick={() => window.open('https://wa.me/79384413767', '_blank')}
+              onClick={() => {
+                (window as any).ym?.(58739473, 'reachGoal', 'whatsapp');
+                window.open('https://wa.me/79384413767', '_blank');
+              }}
             >
               <Icon name="MessageCircle" size={16} />
               WhatsApp
