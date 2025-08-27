@@ -27,7 +27,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gray-800 animate-fade-in">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center bg-zinc-900">
             <div className="space-y-6">
               <h1 className="text-5xl font-bold text-white leading-tight">
                 Профессиональный <span className="text-red-600">ремонт</span> и обслуживание кофемашин в Сочи
