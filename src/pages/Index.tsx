@@ -29,7 +29,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center bg-zinc-900">
             <div className="space-y-6">
-              <h1 className="text-5xl font-bold text-white leading-tight">
+              <h1 className="text-6xl font-bold text-white leading-tight">
                 Профессиональный <span className="text-red-600">ремонт</span> и обслуживание кофемашин в Сочи
               </h1>
               <div className="space-y-4 text-xl text-gray-300">
