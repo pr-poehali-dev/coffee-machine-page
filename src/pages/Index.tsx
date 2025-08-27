@@ -11,7 +11,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary">МЕГАВОЛЬТ</div>
+          <div className="text-3xl font-bold text-red-600">МЕГАВОЛЬТ</div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
@@ -35,16 +35,7 @@ const Index = () => {
               <p className="text-xl text-gray-600">
                 Быстрое и качественное обслуживание кофемашин любой сложности. Выезд мастера в день обращения.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-all duration-200">
-                  <Icon name="Wrench" size={20} />
-                  Вызвать мастера
-                </Button>
-                <Button size="lg" variant="outline" className="hover:scale-105 transition-all duration-200">
-                  <Icon name="Calculator" size={20} />
-                  Рассчитать стоимость
-                </Button>
-              </div>
+
             </div>
             <div className="relative">
               <img 
@@ -77,37 +68,37 @@ const Index = () => {
                 icon: "Settings",
                 title: "Диагностика и ремонт",
                 description: "Полная диагностика неисправностей и профессиональный ремонт кофемашин",
-                price: "от 1500 ₽"
+
               },
               {
                 icon: "Droplets",
                 title: "Чистка и декальцинация",
                 description: "Глубокая очистка внутренних систем от накипи и кофейных масел",
-                price: "от 2500 ₽"
+
               },
               {
                 icon: "Cpu",
                 title: "Замена деталей",
                 description: "Установка оригинальных запчастей с гарантией качества",
-                price: "от 800 ₽"
+
               },
               {
                 icon: "Clock",
                 title: "Срочный ремонт",
                 description: "Экспресс-ремонт в течение 24 часов для коммерческих клиентов",
-                price: "от 3000 ₽"
+
               },
               {
                 icon: "Shield",
                 title: "Гарантийное обслуживание",
                 description: "Плановое техническое обслуживание с расширенной гарантией",
-                price: "от 1800 ₽"
+
               },
               {
                 icon: "Truck",
                 title: "Выезд на дом",
                 description: "Ремонт на дому или в офисе без необходимости транспортировки",
-                price: "от 500 ₽"
+
               }
             ].map((service, index) => (
               <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-2 group">
@@ -117,8 +108,7 @@ const Index = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-2xl font-bold text-primary">{service.price}</span>
+                  <div className="flex justify-end items-center">
                     <Button variant="ghost" size="sm" className="group-hover:bg-primary group-hover:text-white">
                       <Icon name="ArrowRight" size={16} />
                     </Button>
