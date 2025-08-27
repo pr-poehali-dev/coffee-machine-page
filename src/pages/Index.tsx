@@ -67,7 +67,7 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 animate-fade-in bg-stone-800">
+      <section className="pt-24 md:pt-20 pb-16 animate-fade-in bg-stone-800">
         <div className="container mx-auto px-4 bg-stone-800">
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center bg-stone-800">
             <div className="space-y-4 md:space-y-6 order-2 md:order-1">
