@@ -36,7 +36,10 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center bg-stone-200 gap-4">
-          <div className="text-4xl md:text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
+          <div className="flex flex-col items-center md:items-start">
+            <div className="text-4xl md:text-6xl font-bold text-red-600">МЕГАВОЛЬТ</div>
+            <div className="text-black text-sm md:text-base mt-1">г.Сочи, Красноармейская, 9Б</div>
+          </div>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-primary transition-colors">Услуги</a>
             <a href="#about" className="text-gray-700 hover:text-primary transition-colors">О нас</a>
